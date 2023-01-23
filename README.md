@@ -23,3 +23,12 @@ Please note that you need to replace YOUR_TABLE with the name of your table in t
 
 # OneWayANOVA
 This stored procedure takes two input parameters: the dependent variable and independent variable. It then constructs a dynamic SQL statement that computes the F-statistic and P-value for a one-way ANOVA test between the dependent variable and the independent variable. The dynamic SQL statement uses the input parameters to select the appropriate columns from the table and perform the necessary calculations. The stored procedure then executes the dynamic SQL statement, which returns the F-statistic and P-value.
+
+
+
+
+
+
+This stored procedure takes two input parameters: the dependent variable and a comma-separated list of independent variables. It then constructs a dynamic SQL statement that computes the Kendalls Tau and P-value for the test between the dependent variable and independent variables. The dynamic SQL statement uses the input parameters to select the appropriate columns from the table and perform the necessary calculations. The stored procedure then executes the dynamic SQL statement, which returns the Kendalls Tau and P-value.
+
+Please note that you need to replace YOUR_TABLE with the name of your table in the stored procedure. Also, you may need to adjust the data types of the input and output parameters, depending on the data type of your dependent and independent variables. Also the independent variables should be ordinal or continuous variables, otherwise the test will not be valid.
