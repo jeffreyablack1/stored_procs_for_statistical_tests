@@ -14,4 +14,6 @@ The stored procedure uses dynamic SQL to build and execute the query that perfor
 
 Then it calculates the Chi-Squared statistic by summing the squared difference between the observed and expected values, divided by the expected values.
 
+This stored procedure takes two input parameters: the dependent variable and a comma-separated list of independent variables. It then constructs a dynamic SQL statement that computes the Chi-Squared statistic, degrees of freedom, and P-value for the goodness of fit test. The dynamic SQL statement uses the input parameters to select the appropriate columns from the table and perform the necessary calculations. The stored procedure then executes the dynamic SQL statement, which returns the Chi-Squared statistic, degrees of freedom, and P-value for the test.
+
 
