@@ -1,4 +1,4 @@
-# Chi2_Goodness_of_Fit_Stored_Proc
+# ChiSquaredGoodnessOfFitTest.sql
 This is a stored proc for running the chi2 goodness of fit test. 
 
 This stored procedure will return the Chi-Squared statistic, the degrees of freedom, and the P-value for the test.
