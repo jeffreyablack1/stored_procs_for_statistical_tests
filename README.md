@@ -16,7 +16,7 @@ Then it calculates the Chi-Squared statistic by summing the squared difference b
 
 This stored procedure takes two input parameters: the dependent variable and a comma-separated list of independent variables. It then constructs a dynamic SQL statement that computes the Chi-Squared statistic, degrees of freedom, and P-value for the goodness of fit test. The dynamic SQL statement uses the input parameters to select the appropriate columns from the table and perform the necessary calculations. The stored procedure then executes the dynamic SQL statement, which returns the Chi-Squared statistic, degrees of freedom, and P-value for the test.
 
-# Pearson
+# PearsonsCorrelationTest.sql
 This stored procedure takes two input parameters: the dependent variable and a comma-separated list of independent variables. It then constructs a dynamic SQL statement that computes the Pearsons correlation coefficient between the dependent variable and independent variables. The dynamic SQL statement uses the input parameters to select the appropriate columns from the table and perform the necessary calculations. The stored procedure then executes the dynamic SQL statement, which returns the correlation coefficient.
 
 Please note that you need to replace YOUR_TABLE with the name of your table in the stored procedure. Also, you may need to adjust the data type of the output parameter, depending on the data type of your dependent and independent variables. If you want to compute the correlation between multiple independent variables you need to add one more column to the table, which will store the combination of all independent variables.
