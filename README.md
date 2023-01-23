@@ -34,7 +34,7 @@ This stored procedure takes two input parameters: the dependent variable and a c
 
 Please note that you need to replace YOUR_TABLE with the name of your table in the stored procedure. Also, you may need to adjust the data types of the input and output parameters, depending on the data type of your dependent and independent variables. Also the independent variables should be ordinal or continuous variables, otherwise the test will not be valid.
 
-#RunStatisticalTest.sql
+# RunStatisticalTest.sql
 This stored procedure takes two input parameters: the dependent variable and independent variables. It then gets the data type of dependent and independent variables from the information schema and checks if the data types are compatible with one of the available tests (Chi Squared Goodness of Fit, One-way ANOVA, or Pearson's Correlation Coefficient). If the data types are compatible, it runs the appropriate test using the input parameters. If the data types are not compatible, it returns an error message.
 
 Please note that you need to replace YOUR_TABLE with the name of your table in the stored procedure. Also, you may need to adjust the data types of the input parameters, depending on the data type of your dependent and independent
